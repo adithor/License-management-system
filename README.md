@@ -39,7 +39,7 @@ license-management-system/
 │   └── requirements.txt        # Python dependencies
 └── README.md                   # Project documentation
 
-
+```
 
 ## **Getting Started**
 
@@ -48,7 +48,7 @@ license-management-system/
 ```bash
 git clone https://github.com/yourusername/license-management-system.git 
 cd license-management-system
-
+```
 
 ## *Set Up the Server*
 2. Navigate to the server/ directory and install the required dependencies:
@@ -56,25 +56,25 @@ cd license-management-system
 ```bash
 cd server 
 pip install -r requirements.txt
-
+```
 ### **3. Initialize the Database**
 Use Flask-Migrate to initialize the database schema.
 ```bash
 flask db init 
 flask db migrate 
 flask db upgrade
-
+```
 ### **4. Run the Server**
 Start the Flask server:
 ```bash
 python app.py
-
+```
 ### **5. Client-Side License Validator**
 To test the client-side license validator, navigate to the client/ directory and run:
 ```bash
 cd ../client 
 python license_validator.py
-
+```
 # *API Endpoints*
 ###License Validation
 *URL: /validate_license*
@@ -86,3 +86,4 @@ Request Body:
 {
   "license_key": "LICENSE-KEY-HERE"
 }
+```
